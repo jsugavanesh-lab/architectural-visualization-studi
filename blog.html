@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Architectural Visualization Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AV Studio</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+                <li><a href="dashboard.html" class="nav-cta">Dashboard</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Our Blog</h1>
+                <p class="hero-subtitle">Insights, trends, and expert advice on architectural visualization</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="section">
+        <div class="container">
+            <div class="max-w-4xl mx-auto mb-xl">
+                <div class="flex flex-col md:flex-row gap-md items-center justify-between">
+                    <div class="relative flex-1 max-w-md">
+                        <input type="text" id="blog-search" placeholder="Search articles..." class="form-input pr-lg">
+                        <button type="button" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-wrap gap-sm">
+                        <button class="btn btn-primary active" data-category="all">All</button>
+                        <button class="btn btn-outline" data-category="tutorials">Tutorials</button>
+                        <button class="btn btn-outline" data-category="trends">Trends</button>
+                        <button class="btn btn-outline" data-category="case-studies">Case Studies</button>
+                        <button class="btn btn-outline" data-category="tips">Tips</button>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Blog Cards Grid -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="grid grid-3">
+                <!-- Blog Card 1 -->
+                <article class="card" data-category="tutorials">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/736x/3f/45/9a/3f459a59e06f947b053011131375ca76.jpg" alt="Blog Post">
+                    </div>
+                    <div class="card-content">
+                        <div class="flex justify-between items-center mb-sm">
+                            <span class="badge bg-primary text-white">Tutorials</span>
+                            <span class="text-sm text-gray">March 15, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-sm">Mastering Exterior Rendering: A Complete Guide</h3>
+                        <p class="text-gray mb-md">Learn the essential techniques for creating stunning exterior architectural renders that capture attention and communicate design intent effectively.</p>
+                        <div class="flex items-center justify-between mb-md">
+                            <div class="flex items-center">
+                                <img src="https://i.pinimg.com/736x/87/ad/2a/87ad2acc6916fc70db0da309c86f2c5e.jpg
+                            " alt="Author" class="w-8 h-8 rounded-full mr-sm">
+                                <div>
+                                    <div class="text-sm font-medium">Alex Thompson</div>
+                                    <div class="text-xs text-gray">Creative Director</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog-details.html?id=1" class="btn btn-primary btn-block">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="card" data-category="trends">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/736x/87/14/ad/8714ad21cf9820bb9b3e7e6d67a19ab3.jpg" alt="Blog Post">
+                    </div>
+                    <div class="card-content">
+                        <div class="flex justify-between items-center mb-sm">
+                            <span class="badge bg-accent text-white">Trends</span>
+                            <span class="text-sm text-gray">March 10, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-sm">2024 Architectural Visualization Trends</h3>
+                        <p class="text-gray mb-md">Discover the latest trends shaping the architectural visualization industry, from real-time rendering to AI-powered workflows.</p>
+                        <div class="flex items-center justify-between mb-md">
+                            <div class="flex items-center">
+                                <img src="https://i.pinimg.com/736x/ec/81/c2/ec81c21d9c0bd092f4a7ea05fc071067.jpg" alt="Author" class="w-8 h-8 rounded-full mr-sm">
+                                <div>
+                                    <div class="text-sm font-medium">Sarah Chen</div>
+                                    <div class="text-xs text-gray">Lead 3D Artist</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog-details.html?id=2" class="btn btn-primary btn-block">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="card" data-category="case-studies">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/736x/f3/83/71/f38371ffaf4690f21695db811599df01.jpg" alt="Blog Post">
+                    </div>
+                    <div class="card-content">
+                        <div class="flex justify-between items-center mb-sm">
+                            <span class="badge bg-success text-white">Case Studies</span>
+                            <span class="text-sm text-gray">March 5, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-sm">Case Study: Luxury Residential Complex Visualization</h3>
+                        <p class="text-gray mb-md">Behind the scenes of our award-winning visualization project for a high-end residential development in Miami.</p>
+                        <div class="flex items-center justify-between mb-md">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=40&q=80" alt="Author" class="w-8 h-8 rounded-full mr-sm">
+                                <div>
+                                    <div class="text-sm font-medium">Michael Rodriguez</div>
+                                    <div class="text-xs text-gray">Technical Director</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog-details.html?id=3" class="btn btn-primary btn-block">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 4 -->
+                <article class="blog-card" data-category="tips">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Tips</span>
+                            <span class="blog-date">February 28, 2024</span>
+                        </div>
+                        <h3>10 Tips for Better Interior Lighting</h3>
+                        <p>Professional techniques for achieving realistic interior lighting in your 3D renders, from natural light to artificial illumination.</p>
+                        <div class="blog-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=40&q=80" alt="Author">
+                            <div class="author-info">
+                                <span class="author-name">Emily Johnson</span>
+                                <span class="author-role">Animation Specialist</span>
+                            </div>
+                        </div>
+                        <a href="blog-details.html?id=4" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 5 -->
+                <article class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="https://i.pinimg.com/1200x/b7/89/e4/b789e41d216c75f6e0e2bdbcfe63f01f.jpg" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Tutorials</span>
+                            <span class="blog-date">February 20, 2024</span>
+                        </div>
+                        <h3>Creating Realistic Materials in V-Ray</h3>
+                        <p>A comprehensive guide to creating photorealistic materials using V-Ray's advanced material system and texture mapping techniques.</p>
+                        <div class="blog-author">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=40&q=80" alt="Author">
+                            <div class="author-info">
+                                <span class="author-name">David Kim</span>
+                                <span class="author-role">Project Manager</span>
+                            </div>
+                        </div>
+                        <a href="blog-details.html?id=5" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 6 -->
+                <article class="blog-card" data-category="case-studies">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Case Studies</span>
+                            <span class="blog-date">February 15, 2024</span>
+                        </div>
+                        <h3>VR Tour: Transforming Commercial Spaces</h3>
+                        <p>How we created an immersive VR experience for a commercial office complex that helped secure major tenants.</p>
+                        <div class="blog-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=40&q=80" alt="Author">
+                            <div class="author-info">
+                                <span class="author-name">Lisa Anderson</span>
+                                <span class="author-role">VR/AR Developer</span>
+                            </div>
+                        </div>
+                        <a href="blog-details.html?id=6" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 7 -->
+                <article class="blog-card" data-category="trends">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Trends</span>
+                            <span class="blog-date">February 10, 2024</span>
+                        </div>
+                        <h3>The Rise of Real-Time Rendering</h3>
+                        <p>Exploring how real-time rendering technologies are revolutionizing architectural visualization and changing client presentations.</p>
+                        <div class="blog-author">
+                            <img src="https://i.pinimg.com/1200x/65/12/09/65120998eb3a6c416d4f5635c8a78151.jpg" alt="Author">
+                            <div class="author-info">
+                                <span class="author-name">Sarah Chen</span>
+                                <span class="author-role">Lead 3D Artist</span>
+                            </div>
+                        </div>
+                        <a href="blog-details.html?id=7" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 8 -->
+                <article class="blog-card" data-category="tips">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Tips</span>
+                            <span class="blog-date">February 5, 2024</span>
+                        </div>
+                        <h3>Optimizing Render Times Without Quality Loss</h3>
+                        <p>Professional techniques to reduce rendering times while maintaining the highest quality output for your architectural visualizations.</p>
+                        <div class="blog-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=40&q=80" alt="Author">
+                            <div class="author-info">
+                                <span class="author-name">Michael Rodriguez</span>
+                                <span class="author-role">Technical Director</span>
+                            </div>
+                        </div>
+                        <a href="blog-details.html?id=8" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-xl">
+                <div class="flex items-center gap-sm">
+                    <button class="btn btn-outline" disabled>Previous</button>
+                    <button class="btn btn-primary">1</button>
+                    <button class="btn btn-outline">2</button>
+                    <button class="btn btn-outline">3</button>
+                    <button class="btn btn-outline">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="cta">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-sm">Stay Updated</h2>
+                <p class="text-gray mb-lg">Get the latest insights and tutorials delivered to your inbox</p>
+                <form class="flex flex-col md:flex-row gap-sm max-w-md mx-auto">
+                    <input type="email" placeholder="Enter your email" required class="form-input flex-1">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AV Studio</h3>
+                    <p>Your partner in architectural visualization excellence</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">3D Rendering</a></li>
+                        <li><a href="services.html">Virtual Tours</a></li>
+                        <li><a href="services.html">Animations</a></li>
+                        <li><a href="services.html">Floor Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>info@avstudio.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Architectural Visualization Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Blog filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('[data-category]');
+            const blogCards = document.querySelectorAll('[data-category].card');
+            const searchInput = document.getElementById('blog-search');
+            const paginationButtons = document.querySelectorAll('.flex.items-center.gap-sm button');
+
+            // Category filtering
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-outline');
+                    });
+                    // Add active class to clicked button
+                    this.classList.remove('btn-outline');
+                    this.classList.add('btn-primary');
+                    
+                    const category = this.dataset.category;
+                    
+                    blogCards.forEach(card => {
+                        if (category === 'all' || card.dataset.category === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                blogCards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const content = card.querySelector('p').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+
+            // Pagination functionality
+            paginationButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active state from all pagination buttons
+                    paginationButtons.forEach(btn => {
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-outline');
+                    });
+                    
+                    // Add active state to clicked button
+                    this.classList.remove('btn-outline');
+                    this.classList.add('btn-primary');
+                    
+                    // Get page number
+                    const pageNumber = this.textContent;
+                    
+                    // Handle Previous/Next buttons
+                    if (pageNumber === 'Previous' || pageNumber === 'Next') {
+                        const currentPage = document.querySelector('.flex.items-center.gap-sm .btn-primary');
+                        if (currentPage) {
+                            const currentNum = parseInt(currentPage.textContent);
+                            if (pageNumber === 'Previous' && currentNum > 1) {
+                                // Go to previous page
+                                paginationButtons[currentNum - 2].click();
+                            } else if (pageNumber === 'Next' && currentNum < 3) {
+                                // Go to next page
+                                paginationButtons[currentNum].click();
+                            }
+                        }
+                    } else {
+                        // Simulate page navigation
+                        console.log(`Navigating to page ${pageNumber}`);
+                        // In a real application, this would load different content
+                        // For now, we'll just show an alert
+                        if (pageNumber !== '1') {
+                            alert(`Page ${pageNumber} content would be loaded here in a real application.`);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
